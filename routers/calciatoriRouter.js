@@ -31,5 +31,14 @@ router.put("/:id", (req, res) => {
     res.send("Modifica un calciatore")
 })
 
+// MODIFY
+router.patch("/:id", (req, res) => {
+    res.send("Modifica alcune caratteristiche del calciatore")
+})
+
+// DESTROY
+router.delete("/:id", (req, res) => {
+    res.send("Elimina un calciatore")
+})
 
 export default router;
